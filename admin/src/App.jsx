@@ -10,13 +10,13 @@ import Login from './pages/login';
 const App = () => {
   return (
     <Router>
-      <Routes basename="/admin">
+      <Routes basename="/">
         {/* Admin Routes */}
-        <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/admin/projects" element={<Projects />} />
+        <Route path="/" element={<AdminDashboard />} />
+        <Route path="projects" element={<Projects />} />
 
-        <Route path="/admin/contacts" element={<Contacts />} />
-        <Route path="/admin/login" element={<Login />} />
+        <Route path="contacts" element={<Contacts />} />
+        <Route path="/login" element={<Login />} />
 
         {/* Redirect unknown routes to admin login */}
         <Route path="*" element={<Navigate to="/admin/login" />} />

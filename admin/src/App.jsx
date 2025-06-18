@@ -10,7 +10,7 @@ import Login from './pages/login';
 const App = () => {
   return (
     <Router>
-      <Routes>
+      <Routes basename="/admin">
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/admin/projects" element={<Projects />} />

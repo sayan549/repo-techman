@@ -2,7 +2,7 @@ services:
   - type: web
     name: techman-frontend
     env: static
-    staticPublishPath: /
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*

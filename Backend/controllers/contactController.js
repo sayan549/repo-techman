@@ -21,7 +21,7 @@ const createContact = async (req, res) => {
     });
     await contact.save();
 
-    res.status(201).json({ message: 'New contact message saved for admin review', contact });
+    res.status(201).json({ message: 'thank you for contaning us New contact message saved for admin review', contact });
   } catch (error) {
     res.status(500).json({ message: 'Failed to save contact message', error: error.message });
   }

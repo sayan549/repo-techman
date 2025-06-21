@@ -10,7 +10,7 @@ connectDB();
 
 const app = express();
 // 🔐 Secure CORS setup
-const allowedOrigins = ['https://techman.onrender.com'];
+const allowedOrigins = ['https://techman.onrender.com','https://repo-techman.onrender.com'];
 
 app.use(cors({
   origin: function (origin, callback) {
